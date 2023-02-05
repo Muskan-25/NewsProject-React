@@ -21,7 +21,7 @@ var email=localStorage.getItem("Email");
         var data = { articleHeadline, category,article }
         setDoc(doc(db, `users/${useremail}/articles`, articleHeadline), data);
     }); 
-    window.location.pathname='./myarticles'
+    window.location.pathname='/myarticles'
     // localStorage.setItem('articleHeadline', articleHeadline);
 }
 function logoutfunction(){
