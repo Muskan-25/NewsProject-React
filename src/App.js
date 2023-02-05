@@ -15,9 +15,9 @@ function App() {
         <Route path="/NewsProject-React" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/article" element={email!==null ?<Article /> : <Navigate replace to={"/"} />} />
-        <Route path="/myarticles" element={email!==null ?<ArticlePage /> : <Navigate replace to={"/"} />} />
-        <Route path="/post" element={email!==null ?<Post /> : <Navigate replace to={"/"} />}/>
+        <Route path="/article" element={email!==null ?<Article /> : <Navigate replace to={"/NewsProject-React"} />} />
+        <Route path="/myarticles" element={email!==null ?<ArticlePage /> : <Navigate replace to={"/NewsProject-React"} />} />
+        <Route path="/post" element={email!==null ?<Post /> : <Navigate replace to={"/NewsProject-React"} />}/>
       </Routes>
     </>
   );

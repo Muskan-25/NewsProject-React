@@ -52,7 +52,7 @@ function Article() {
             <textarea id="article" className="article p-3 text-xl border-2 border-gray-200" cols="10" rows="7" placeholder="Write your article here" required/>
             <button className="text-white text-xl font-semibold py-3" type="submit" style={{backgroundColor : "#7A6BB8"}} onClick={setArticle}> Submit </button>
         </form>
-        <p className="text-right text-md"><Link to="./myarticles" style={{color: "#7A6BB8"}}>My Articles</Link></p>
+        <p className="text-right text-md"><Link to="/myarticles" style={{color: "#7A6BB8"}}>My Articles</Link></p>
     </div>
     </section>
     </>
