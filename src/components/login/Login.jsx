@@ -23,7 +23,7 @@ async function loginbtn(e){
         title: 'Login successful',
         showConfirmButton: false,
       })
-      window.location.pathname = "/NewsProject-React";
+      window.location.pathname = "./NewsProject-React";
       localStorage.setItem("Email", email.value);
     }
   },(error)=>{
