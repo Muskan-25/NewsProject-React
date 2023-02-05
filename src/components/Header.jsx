@@ -29,7 +29,7 @@ function Header(props) {
         <div className="xl:w-2/6 md:w-2/5 w-16"></div>
         <div className="headline justify-content-center xl:w-2/6 md:w-2/3 w-full">
             <h1 className="m-0 text-center text-white font-bold text-3xl ">
-              <Link to="/">Webcooks Headlines</Link></h1>
+              <Link to="/NewsProject-React">Webcooks Headlines</Link></h1>
         </div>
         <div className="buttons justify-end flex gap-8 xl:w-2/6 md:w-2/5 w-full" id="btns">
           {props.login}

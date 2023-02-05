@@ -6,7 +6,7 @@ import { doc, onSnapshot } from "firebase/firestore";
 
 function logoutfunction(){
     localStorage.removeItem('Email');
-    window.location.pathname='/';
+    window.location.pathname='/NewsProject-React';
 }
 
 var articleHeadline = localStorage.getItem('Headline');
@@ -27,7 +27,7 @@ async function postData(){
 function Post() {
   return (
     <>
-    <Header login={<Link to="/" className="hidden xl-block lg-block xxl-block md:block  xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 login" id="loginbtn"><button className="font-bold bg-white w-full h-full" onClick={logoutfunction}>Logout</button></Link>} signup={<Link to="/signup" className="hidden  xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 signup" id="signupbtn"><button className="font-bold bg-white w-full h-full">Signup</button></Link>} />
+    <Header login={<Link to="/NewsProject-React" className="hidden xl-block lg-block xxl-block md:block  xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 login" id="loginbtn"><button className="font-bold bg-white w-full h-full" onClick={logoutfunction}>Logout</button></Link>} signup={<Link to="/signup" className="hidden  xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 signup" id="signupbtn"><button className="font-bold bg-white w-full h-full">Signup</button></Link>} />
 
     <section className="posts justify-center my-12">
     <div className="xl:w-10/12 lg:w-10/12 md:w-10/12 flex flex-col w-full sm:w-10/12 py-14 px-14 mx-auto" style={{backgroundColor: "#f5f3fd"}}>
