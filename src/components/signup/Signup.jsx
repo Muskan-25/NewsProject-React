@@ -3,7 +3,6 @@ import db from '../../firebase';
 import { setDoc,doc } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import Swal from 'sweetalert2'
-import Header from '../Header';
 
 var obj = [
     { type: "text",inputName:"username",placeholder:"Username" },
@@ -39,7 +38,6 @@ function signupFormSubmission(){
 function Signup() {
   return (
     <>
-    <Header login={<Link to="/login" className="hidden xl-block lg-block xxl-block md:block  xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 login" id="loginbtn"><button className="font-bold bg-white w-full h-full">Login</button></Link>} signup={<Link to="/signup" className="hidden xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 signup" id="signupbtn"><button className="font-bold bg-white w-full h-full"></button></Link>} />
     <section className="signup justify-center my-20">
     <div className="xl:w-2/5 lg:w-3/6 md:w-3/6 grid w-full sm:w-3/5 py-14 px-14 mx-auto gap-8 shadow-gray-300 shadow-md" style={{backgroundColor: "#F8F6FF"}}>
         <h1 className="text-3xl font-bold text-gray-900 text-center font-sans mb-3">

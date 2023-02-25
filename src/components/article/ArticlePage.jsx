@@ -1,5 +1,4 @@
 import React from 'react'
-import Header from '../Header'
 import { Link } from "react-router-dom"
 import db from '../../firebase';
 import {collection, getDocs} from "firebase/firestore";
@@ -50,7 +49,6 @@ async function getdata(){
     var articleHeadline = articledata.articleHeadline;
     var article = articledata.article;
     var category=articledata.category;
-  
     var wordArr = article.split(" ");
     var wordShort = wordArr.splice(0, 14).join(" ");
   
@@ -62,8 +60,6 @@ async function getdata(){
 function ArticlePage() {
   return (
     <>
-    <Header login={<Link to="/NewsProject-React" className="hidden xl-block lg-block xxl-block md:block  xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 login" id="loginbtn"><button className="font-bold bg-white w-full h-full" onClick={logoutfunction}>Logout</button></Link>} signup={<Link to="/signup" className="hidden  xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 signup" id="signupbtn"><button className="font-bold bg-white w-full h-full">Signup</button></Link>} />
-
     <section className="myarticles justify-center my-12">
     <div className="max-w-screen-xl flex flex-wrap justify-around w-full sm:w-5/6 py-14 px-20 mx-auto gap-8" id='posts' style={{backgroundColor: "#f5f3fd"}}>
     </div>

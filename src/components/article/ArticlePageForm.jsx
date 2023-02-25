@@ -1,20 +1,18 @@
 import React from 'react'
-import Header from '../Header'
 import { Link } from "react-router-dom"
 import db from '../../firebase';
 import { setDoc, doc, onSnapshot} from "firebase/firestore";
 
 var email=localStorage.getItem("Email");
 
- function setArticle(e){
+async function setArticle(e){
     e.preventDefault();
 
     var articleHeadline = document.querySelector('#articleHeadline').value;
     var category = document.getElementById('category').value;
     var article = document.getElementById('article').value;
     
-
-    onSnapshot(doc(db, "users",email),(docs)=>{
+    onSnapshot(doc (db, "users",email),(docs)=>{
         const user = docs.data();
         const useremail =  user.email;
         console.log(useremail.toString());
@@ -32,8 +30,6 @@ function logoutfunction(){
 function Article() {
   return (
     <>
-    <Header login={<Link to="/NewsProject-React" className="hidden xl-block lg-block xxl-block md:block  xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 login" id="loginbtn"><button className="font-bold bg-white w-full h-full" onClick={logoutfunction}>Logout</button></Link>} signup={<Link to="/signup" className="hidden  xl:w-1/5 lg:w-1/3 xl:h-auto md:w-1/3 signup" id="signupbtn"><button className="font-bold bg-white w-full h-full">Signup</button></Link>} />
-
     <section className="article justify-center my-12">
     <div className="xl:w-10/12 lg:w-10/12 md:w-10/12 grid w-full sm:w-10/12 py-14 px-14 mx-auto " style={{backgroundColor: "#f5f3fd"}}>
     <h1 className="text-3xl font-bold text-gray-900 font-sans">
