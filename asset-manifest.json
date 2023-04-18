@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/NewsProject-React/static/css/main.471061b1.css",
+    "main.js": "/NewsProject-React/static/js/main.b39c6ad3.js",
+    "index.html": "/NewsProject-React/index.html",
+    "main.471061b1.css.map": "/NewsProject-React/static/css/main.471061b1.css.map",
+    "main.b39c6ad3.js.map": "/NewsProject-React/static/js/main.b39c6ad3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.471061b1.css",
+    "static/js/main.b39c6ad3.js"
+  ]
+}
